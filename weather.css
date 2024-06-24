@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+    background:url(./icons/white-clouds-bright-blue-sky-background.jpg);
+   background-size:cover ;
+   background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 450px;
+    height: 550px;
+    background-color: rgba(0, 8, 255, 0.147);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 22px;
+    transition: height 0.5s ease;
+    /* overflow: scroll; */
+
+}
+
+.searchbox {
+    background:transparent;
+    position: relative;
+    height: 45px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background: transparent; */
+    border: 2px solid rgba(128, 128, 128, 0.273);
+}
+
+.searchbox button {
+    background: transparent;
+    border: none;
+}
+
+.searchbox input {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.686);
+    font-weight: 600;
+    font-size: 20px;
+}
+input[type="text"] { 
+
+    font-weight: inherit;
+    color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+.weather-box {
+    height: 90%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    overflow: hidden;
+
+}
+
+.cloud-info img {
+
+    width: 50%;
+    position: relative;
+    left: 88px;
+
+    overflow: hidden;
+
+    transition: transform 0,3s ease-in-out;
+
+}
+
+
+#feelslike{
+    display: flex;
+    color: white;
+    justify-content: center;
+    font-size: large;
+    
+    overflow: hidden;
+}
+
+#feelslike p:first-child{
+    margin-left: 8px;
+
+    overflow: hidden;
+}
+
+#feelslike p{
+    font-weight: 700;
+    overflow: hidden;
+}
+
+
+.additionalwether-info {
+    width: 70%;
+    height: 20%;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.temp-span {
+    display: flex;
+    font-weight: 700;
+    overflow: hidden;
+
+}
+
+#numeric-temp{
+    font-size: 90px;
+    color: white;
+    overflow: hidden;
+}
+
+#degree {
+    font-size: 40px;
+    color: white;
+    overflow: hidden;
+}
+
+#type{
+font-weight: 500;
+font-size: 30px;
+text-align: center;
+margin-bottom: 20px;
+color: white;
+}
+
+
+
+.additionalwether-info{
+    display: flex;
+    justify-content: space-between;
+    width: 320px;;
+    font-weight: 700;
+    border: none;
+    overflow: hidden;
+}
+
+.humidity{
+    color: white;
+    width: 155px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.wind-speed{
+    color: white;
+    width: 155px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.more-info{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 12px;
+    /* overflow: hidden; */
+}
+
+.more-info2{
+    display: flex;
+    /* overflow: hidden; */
+   
+}
+
+
+
+#humidityinfo{
+    margin-right:20px ;
+    /* overflow: hidden; */
+}
